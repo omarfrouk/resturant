@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import Header from "../../components/Header/header"
 import Footer from "../../components/Footer/footer"
+import HomeBack from "../../components/Footer/homeBack"
 import './home.css'
 class home extends React.Component {
     constructor(props) {
@@ -15,6 +16,8 @@ class home extends React.Component {
         return (
             <div className="home">
                 <Header/>
+                <HomeBack/>
+
                 <Footer/>
             </div>
         )
