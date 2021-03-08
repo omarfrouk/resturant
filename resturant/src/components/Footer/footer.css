@@ -1,7 +1,42 @@
 .footer {
-    /* padding-top: 15px;
+    /* padding-top: 15px; */
+    /* margin: 0; */
     bottom: 0;
+    font-family: Cursive !important;
     background-color: white;
+    padding: 20px;
     color: black;
-    height: 150px; */
+    height: 190px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'col1 col2 col3 col4';
+    grid-gap: 10px;
+}
+
+.col1 {
+    grid-area: col1;
+}
+
+.col2 {
+    grid-area: col2;
+}
+
+.col3 {
+    grid-area: col3;
+}
+
+.col4 {
+    grid-area: col4;
+}
+
+a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+}
+
+a.social:hover {
+    transform: translateY(-2px);
 }
