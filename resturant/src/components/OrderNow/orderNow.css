@@ -1,0 +1,85 @@
+.orderNow {
+    background: #dfaa66;
+    font-family: Cursive !important;
+}
+
+.clintInformationRow {
+    height: 60px;
+}
+
+.clintInformationRow label {
+    float: left;
+    width: 10%;
+}
+
+.inputs {
+    float: left;
+}
+
+.clintInformationRow input {
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.demo {
+    margin-top: 2px;
+    color: red;
+}
+
+.clintInformation input[type=submit] {
+    width: 100px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 130px;
+}
+
+.clintInformation input[type=submit]:hover {
+    background-color: black;
+    color: white;
+}
+
+.clear {
+    clear: both;
+}
+
+.selectOrder {
+    /* background-color: red; */
+}
+
+.selectOrderRow {
+    height: 470px;
+}
+
+.selectOrderItem1,
+.selectOrderItem2,
+.selectOrderItem3 {
+    float: left;
+    width: 30%;
+    /* background-color: aqua; */
+    height: 440px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-left: 2%;
+    background: white;
+}
+
+.selectOrderImg {
+    height: 200px;
+}
+
+.selectOrderRow h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 25px;
+    /* margin-bottom: 15px; */
+    padding: 5px;
+}
+
+.selectOrderRow p,
+.selectOrderRow h2 {
+    text-align: center;
+}

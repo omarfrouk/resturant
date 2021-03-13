@@ -1,0 +1,21 @@
+.background {
+    background-color: #dfaa66;
+    display: flex;
+}
+
+.menu {
+    background-color: rgb(88, 86, 86);
+    color: white;
+    font-family: Cursive !important;
+    margin: 50px 300px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.foodType {
+    padding-top: 70px;
+}
+
+.food {
+    margin: 20px;
+}

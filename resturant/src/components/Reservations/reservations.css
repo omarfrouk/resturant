@@ -1,0 +1,104 @@
+.reservations {
+    /* background: rgb(236, 241, 219); */
+    background-color: #dfaa66;
+    color: white;
+    font-family: Cursive !important;
+}
+
+.reservationsDescription {
+    float: left;
+    width: 40%;
+    height: 100%;
+}
+
+.brief {
+    padding: 150px 30px;
+}
+
+.brief p {
+    font-size: 20px;
+}
+
+.reservationsForm {
+    float: left;
+    width: 60%;
+    /* height: 100%; */
+}
+
+form {
+    padding: 150px 50px;
+}
+
+.inputs {
+    width: 250px;
+    height: 30px;
+}
+
+.name {
+    display: grid;
+    grid-template-areas: 'col1 col2 c c c c c c c c c c c c c';
+}
+
+.firstName {
+    grid-area: col1;
+}
+
+.lastName {
+    grid-area: col2;
+}
+
+.date {
+    display: grid;
+    grid-template-areas: 'd m y y y y y y y y y y y y y y y y y y y y y y y y y ';
+    grid-gap: 0px;
+}
+
+.day {
+    grid-area: d;
+}
+
+.month {
+    grid-area: m;
+}
+
+.year {
+    grid-area: y;
+}
+
+.day input,
+.month input {
+    width: 35px;
+    height: 25px;
+}
+
+.year input {
+    width: 50px;
+    height: 25px;
+}
+
+.comments {
+    height: 100px;
+}
+
+.submit {
+    width: 120px;
+    height: 40px;
+    font-family: Cursive !important;
+    border: 2px solid black;
+    border-radius: 7px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.submit:hover {
+    background-color: black;
+    color: white;
+}
+
+.clear {
+    clear: both;
+}
+
+.demo {
+    color: red;
+}

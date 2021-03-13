@@ -1,15 +1,15 @@
 import React from 'react'
-import './header.css'
-
+import './header.css' 
 function header(props) {
     return (
-        <div  className="header"> 
+        <div  className="header">  
                 <a href="/home" className="navHunter">HUNTER</a>
-                <a href="" className="navMenu">Menu</a> 
-                <a href="" className="nav">Reservations</a>  
-                <a href="" className="nav">Order Now</a> 
-                <a href="" className="nav">Story</a> 
-                <a href="" className="nav">Gallery </a> 
+                <a className="navMenu"></a>
+                <a href="/menu" className="nav">Menu</a> 
+                <a href="/reservations" className="nav">Reservations</a>  
+                <a href="/orderNow" className="nav">Order Now</a> 
+                <a href="/story" className="nav">Story</a> 
+                <a href='/gallery' className="nav">Gallery </a> 
         </div>
     )
 }
