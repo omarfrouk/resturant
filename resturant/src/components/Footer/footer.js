@@ -39,7 +39,7 @@ function footer() {
                     <iframe src="./home"
                     // src="https://www.google.com/maps?sll=30.267153,-97.743061&q=+Austin,+TX,+United+States&z=11" 
                     width="90%" 
-                    height="80%" 
+                    height="99%" 
                     title="Location"
                     ></iframe> 
                 </div> 

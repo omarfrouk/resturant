@@ -1,0 +1,31 @@
+.gallery {
+    height: auto;
+}
+
+.row {
+    height: 600px;
+}
+
+.oneThirdCol {
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+.resetOneThirdCol {
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+
+.hafCol {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.fullCol {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
