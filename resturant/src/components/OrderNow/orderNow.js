@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import item1 from './item1.jfif'
 import item2 from './item2.jfif'
 import item3 from './item3.jfif'
@@ -8,13 +8,46 @@ import item6 from './item6.jfif'
 
 
 import './orderNow.css'
-class orderNow extends Component {
-    validateText=(event)=>{ 
+
+function createItem(id,count) {
+    return{id, count}
+}
+const item=[
+    1,2,3
+]
+function OrderNow (){
+    const [items,setItems]=React.useState(item);
+    const [id,setId]=React.useState(0);
+    React.useEffect(() => {
+        setItems(item);
+      }, []);
+    
+
+    const decreaseNumberOItems=()=>{
+        if(items[id]!==0)
+        setItems([ ...items,
+            items[id]-1
+        ])
+    }
+    const increaseNumberOItems=()=>{
+        // setItems([ ...items,
+        //     items[id]+1
+        // ])
+        var array = [...items]; // make a separate copy of the array
+        var index = array.indexOf(id)
+        if (index > -1) {
+          array.splice(index, 1,{...array[index], 0:5});//replace 1 name prop from index row
+          setItems([
+            ...array,
+          ]);
+        }
+    }
+    
+    const validateText=(event)=>{ 
         event.preventDefault();
         validateName("clintName","clintNameDemo");
         validateName("clintAddress","clintAddressDemo");
-        validatePhoneNumber("clintPhoneNumber","clintPhoneNumberDemo");
-
+        validatePhoneNumber("clintPhoneNumber","clintPhoneNumberDemo"); 
         function validateName(fId,demo){ 
             let text,
                 err = "",
@@ -51,7 +84,7 @@ class orderNow extends Component {
             else document.getElementById(demo).innerHTML = ""; 
         }
     }
-    render() {
+    
         return (
             <div className="orderNow">
                 <div className="clintInformation">
@@ -77,7 +110,7 @@ class orderNow extends Component {
                                 <p className="demo" id="clintPhoneNumberDemo"></p>
                             </div>
                         </div>
-                        <input type="submit" value="Order Now" onClick={this.validateText} />
+                        <input type="submit" value="Order Now" onClick={validateText} />
                         <div className="clear"></div>
                     </form>
                 </div>
@@ -85,6 +118,11 @@ class orderNow extends Component {
                 <div className="selectOrder">
                     <div className="selectOrderRow">
                         <div className="selectOrderItem1">
+                            <div className="addToOrder">
+                                <button onClick={()=>{setId(0); decreaseNumberOItems(); }}>-</button>
+                                <label>{`   `}{items[0]}{`   `}</label>
+                                <button onClick={()=>{setId(0); increaseNumberOItems();}}>+</button> 
+                            </div>
                             <div className="selectOrderImg">
                                 <img src={item1} width="100%" height="100%" alt=""/>
                             </div>
@@ -98,6 +136,11 @@ class orderNow extends Component {
                         </div> 
 
                         <div className="selectOrderItem2">
+                            <div className="addToOrder">
+                            <button onClick={()=>{setId(1);console.log(id); decreaseNumberOItems();}}>-</button>
+                                <label>{`   `}{items[1]}{`   `}</label>
+                                <button onClick={()=>{setId(1); increaseNumberOItems();}}>+</button> 
+                            </div>
                             <div className="selectOrderImg">
                             <img src={item2} width="100%" height="100%" alt=""/>
                             </div>
@@ -165,6 +208,6 @@ class orderNow extends Component {
                 
             </div>
         )
-    }
+    
 }
-export default orderNow;
+export default OrderNow;

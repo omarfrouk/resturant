@@ -63,6 +63,23 @@
     background: white;
 }
 
+.addToOrder {
+    margin: 5px 30%;
+    border: 2px black solid;
+    /* width: auto; */
+    display: inline-block;
+}
+
+.addToOrder button {
+    width: 70px;
+    height: 30px;
+}
+
+.addToOrder label {
+    width: 70px;
+    font-family: Cursive !important;
+}
+
 .selectOrderImg {
     height: 200px;
 }
