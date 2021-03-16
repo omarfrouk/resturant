@@ -5,12 +5,16 @@ import Footer from "../../components/Footer/footer"
 
 class orderNow extends Component {
     render() {
-        return (
-            <div>
-                <Header/>
-                <OrderNow/>
-                <Footer/>
-            </div>
+        return ( <
+            div >
+            <
+            Header / >
+            <
+            OrderNow / >
+            <
+            Footer / >
+            <
+            /div>
         )
     }
 }
