@@ -1,5 +1,4 @@
 .reservations {
-    /* background: rgb(236, 241, 219); */
     background-color: #dfaa66;
     color: white;
     font-family: Cursive !important;
@@ -22,62 +21,37 @@
 .reservationsForm {
     float: left;
     width: 60%;
-    /* height: 100%; */
 }
 
 form {
     padding: 150px 50px;
 }
 
+.reservationsFormRow {
+    height: 60px;
+    margin-top: 15px;
+    margin-bottom: 1px !important;
+}
+
 .inputs {
-    width: 250px;
+    width: 300px !important;
     height: 30px;
 }
 
-.name {
-    display: grid;
-    grid-template-areas: 'col1 col2 c c c c c c c c c c c c c';
+.reservationDate {
+    background-color: white;
+    width: 250px;
 }
 
-.firstName {
-    grid-area: col1;
-}
-
-.lastName {
-    grid-area: col2;
-}
-
-.date {
-    display: grid;
-    grid-template-areas: 'd m y y y y y y y y y y y y y y y y y y y y y y y y y ';
-    grid-gap: 0px;
-}
-
-.day {
-    grid-area: d;
-}
-
-.month {
-    grid-area: m;
-}
-
-.year {
-    grid-area: y;
-}
-
-.day input,
-.month input {
-    width: 35px;
-    height: 25px;
-}
-
-.year input {
-    width: 50px;
-    height: 25px;
+.numberOfGuests {
+    width: 70px;
+    background-color: white;
+    margin-bottom: 20px;
 }
 
 .comments {
-    height: 100px;
+    height: 150px;
+    width: 350px !important;
 }
 
 .submit {
@@ -86,8 +60,7 @@ form {
     font-family: Cursive !important;
     border: 2px solid black;
     border-radius: 7px;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 60px;
 }
 
 .submit:hover {

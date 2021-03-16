@@ -3,21 +3,47 @@
     font-family: Cursive !important;
 }
 
+.clintInformation {
+    float: left;
+    width: 60%;
+    /* background-color: rgb(163, 131, 131); */
+}
+
+.shoppingCart {
+    margin-top: 150px;
+    float: left;
+    width: 40%;
+    /* background-color: green; */
+}
+
+.shoppingCart a {
+    text-decoration: none;
+    color: rgb(65, 62, 62);
+}
+
+.shoppingCart a:hover {
+    transition: transform 250ms;
+    display: inline-block;
+    transform: translateY(-8px);
+}
+
 .clintInformationRow {
     height: 60px;
 }
 
 .clintInformationRow label {
     float: left;
-    width: 10%;
+    width: 15%;
 }
 
 .inputs {
     float: left;
+    width: 85%;
 }
 
 .clintInformationRow input {
-    height: 20px;
+    width: 200px;
+    height: 25px;
     border: 1px solid black;
     border-radius: 3px;
 }
@@ -28,6 +54,8 @@
 }
 
 .clintInformation input[type=submit] {
+    float: left;
+    width: 90%;
     width: 100px;
     height: 40px;
     border: 1px solid black;
@@ -47,7 +75,7 @@
 }
 
 .selectOrderRow {
-    height: 470px;
+    /* height: 470px; */
 }
 
 .selectOrderItem1,
@@ -56,17 +84,17 @@
     float: left;
     width: 30%;
     /* background-color: aqua; */
-    height: 440px;
+    height: 470px;
     border: 1px solid black;
     border-radius: 3px;
     margin-left: 2%;
+    margin-bottom: 40px;
     background: white;
 }
 
 .addToOrder {
-    margin: 5px 30%;
+    margin: 5px 25%;
     border: 2px black solid;
-    /* width: auto; */
     display: inline-block;
 }
 
@@ -96,3 +124,47 @@
 .selectOrderRow h2 {
     text-align: center;
 }
+
+.shoppingCartContent {
+    margin: 15px 10px;
+    font-family: Cursive !important;
+}
+
+.shoppingCartContent table,
+.shoppingCartContent th,
+.shoppingCartContent td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    /* width: 100%; */
+}
+
+.shoppingCartContent th,
+.shoppingCartContent td {
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.changeOrderFromCart button {
+    width: 30px;
+    height: 20px;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.changeOrderFromCart button:hover {
+    background-color: black;
+    color: white;
+}
+
+.shoppingCartContent tr:nth-child(even) {
+    background-color: rgb(190, 187, 187);
+}
+
+.shoppingCartContent tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+
+/* .shoppingCartImages {
+    padding: 2px;
+} */
