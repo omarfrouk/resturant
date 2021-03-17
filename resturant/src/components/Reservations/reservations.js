@@ -83,18 +83,18 @@ function Reservations(){
     
     return (
         <div className="reservations">
-            <div className="reservationsDescription">
-                <div className="brief">
+            <div className="col-s-12 reservationsDescription">
+                {/* <div className="brief"> */}
                     <h1>Reservations</h1>
                     <br/>
                     <p>For parties of six or more,
                     we recommend making reservations at least two weeks in advance. For walk-ins,
                     we only seat parties on a first come, first served basis.</p>
-                </div>
+                {/* </div> */}
             </div>
                 
-            <div className="reservationsForm">
-                <form onSubmit={(event)=>{
+            {/* <div className="col-s-12 reservationsForm"> */}
+                <form className="col-s-12 reservationsForm" onSubmit={(event)=>{
                         event.preventDefault(); 
                         if(validate()){
                             // alert(comments);
@@ -121,6 +121,7 @@ function Reservations(){
                         />
                     </div>
                     <p className="demo" id="phoneNumberDemo"></p>   
+
                     <div className="reservationsFormRow"> 
                         <label>Email Address*</label><br/>
                         <input dir="auto" type="text" id="emailAddress" className="inputs"
@@ -134,20 +135,19 @@ function Reservations(){
 
                     <label>Date*</label>
                     <div className="date"> 
-                    <TextField
-                        id="datetime-local" 
-                        type="datetime-local"
-                        defaultValue={moment().format("YYYY-MM-DDThh:mm")} 
-                        className="reservationDate"
-                        value={time}
-                        onChange={(e)=>{
-                            setTime(e.target.value);
-                        }} 
-                    /> 
+                        <TextField
+                            id="datetime-local" 
+                            type="datetime-local"
+                            defaultValue={moment().format("YYYY-MM-DDThh:mm")} 
+                            className="reservationDate"
+                            value={time}
+                            onChange={(e)=>{
+                                setTime(e.target.value);
+                            }} 
+                        /> 
                     </div>
-                    <p className="demo" id="dateDemo"></p>
+                    <p className="demo" id="dateDemo"></p><br/>
 
-                    <br/>
                     <label>Number of Guests *</label><br/> 
                     <Select
                         native 
@@ -185,7 +185,7 @@ function Reservations(){
                     <div className="clear"></div> 
                     <input type="submit" className="submit" />        
                 </form>  
-            </div> 
+            {/* </div>  */}
             <div className="clear"></div>
             
         </div>

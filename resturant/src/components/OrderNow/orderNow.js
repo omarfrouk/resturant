@@ -211,15 +211,15 @@ function OrderNow (){
     
         return (
             <div className="orderNow">
-                <div className="clintInformation">
-                    <form onSubmit={(event)=>{
+                <div className="Clint">
+                    <form className="clintInformation" onSubmit={(event)=>{
                             event.preventDefault();
                             if(validateText()){ 
                                 console.log(clintName);
                                 console.log(clintAddress);
                                 console.log(clintPhoneNumber); 
-                              }
-                               
+                            }
+                            
                         }}>
                         <div className="clintInformationRow">
                             <label>Name*</label>
@@ -252,87 +252,87 @@ function OrderNow (){
                             </div>
                         </div>
                         <input type="submit" value="Order Now"/> 
-                        {/* <div className="clear"></div> */}
+                        <div className="clear"></div>
                     </form>
-                    
-                </div>
-                <div className="shoppingCart"> 
-                    <a href="" onClick={(event)=>{
-                        event.preventDefault();
-                        handleClickOpen(); 
-                    }}><h1>Cart</h1> <FaShoppingCart color="#fff" size="80px"  /></a>
-                    
-                    <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
-                        <DialogTitle id="customized-dialog-title" onClose={handleClose}>
-                            shopping Cart 
-                        </DialogTitle>
-                        <DialogContent dividers>
-                            <Typography gutterBottom>
-                                <div className="shoppingCartContent"> 
-                                    <table>
-                                         <tr>
-                                            <th>Image</th>
-                                            <th>Meal</th>
-                                            <th>Quantity</th>
-                                            <th>Price</th>
-                                            <th>Total price</th>
-                                            <th>Change the order</th>
-                                        </tr>
-                                            {selectItems && selectItems.map((item)=>( 
-                                                <tr> 
-                                                    { item.count>=1? 
-                                                            <td className="shoppingCartImages"><img src={item.img} width="90px" height="60px" /></td>  
-                                                       :null} 
-                                                    { item.count>=1? 
-                                                            <td>{item.title}</td>  
-                                                       :null} 
-                                                       { item.count>=1? 
-                                                            <td>{item.count}</td>  
-                                                       :null} 
-                                                       { item.count>=1? 
-                                                            <td>{item.price}</td>  
-                                                       :null} 
-                                                       { item.count>=1? 
-                                                            <td>{item.price*item.count}</td>  
-                                                       :null} 
-                                                       { item.count>=1? 
-                                                            <td>
-                                                                <div className="changeOrderFromCart">
-                                                                    <button onClick={()=>{decreaseNumberOItems(item,item.count); }}>-</button>
-                                                                    <button onClick={()=>{increaseNumberOItems(item,item.count);}}>+</button> 
-                                                                </div>
-                                                            </td>  
-                                                       :null} 
-                                              </tr>
-                                              
-                                             ))}
-                                             <tr>
-                                                <td></td>  
-                                                <td></td>  
-                                              </tr>
-                                             <tr>
-                                                <td>Total amount</td>  
-                                                <td>{totalAmount}</td>  
-                                              </tr>
-                                    </table>
-                                    
-                               </div>
-                            </Typography>
                          
-                        </DialogContent>
-                        {/* <DialogActions>
-                            <Button autoFocus onClick={handleClose} color="primary">
-                                Save changes
-                            </Button>
-                        </DialogActions> */}
-                    </Dialog>
+                    <div className="shoppingCart"> 
+                        <a href="" onClick={(event)=>{
+                            event.preventDefault();
+                            handleClickOpen(); 
+                        }}><h1>Cart</h1> <FaShoppingCart color="#fff" size="80px"  /></a>
+                        
+                        <Dialog onClose={handleClose} aria-labelledby="customized-dialog-title" open={open}>
+                            <DialogTitle id="customized-dialog-title" onClose={handleClose}>
+                                shopping Cart 
+                            </DialogTitle>
+                            <DialogContent dividers>
+                                <Typography gutterBottom>
+                                    <div className="shoppingCartContent"> 
+                                        <table>
+                                            <tr>
+                                                <th>Image</th>
+                                                <th>Meal</th>
+                                                <th>Quantity</th>
+                                                <th>Price</th>
+                                                <th>Total price</th>
+                                                <th>Change the order</th>
+                                            </tr>
+                                                {selectItems && selectItems.map((item)=>( 
+                                                    <tr> 
+                                                        { item.count>=1? 
+                                                                <td className="shoppingCartImages"><img src={item.img} width="90px" height="60px" /></td>  
+                                                        :null} 
+                                                        { item.count>=1? 
+                                                                <td>{item.title}</td>  
+                                                        :null} 
+                                                        { item.count>=1? 
+                                                                <td>{item.count}</td>  
+                                                        :null} 
+                                                        { item.count>=1? 
+                                                                <td>{item.price}</td>  
+                                                        :null} 
+                                                        { item.count>=1? 
+                                                                <td>{item.price*item.count}</td>  
+                                                        :null} 
+                                                        { item.count>=1? 
+                                                                <td>
+                                                                    <div className="changeOrderFromCart">
+                                                                        <button onClick={()=>{decreaseNumberOItems(item,item.count); }}>-</button>
+                                                                        <button onClick={()=>{increaseNumberOItems(item,item.count);}}>+</button> 
+                                                                    </div>
+                                                                </td>  
+                                                        :null} 
+                                                </tr>
+                                                
+                                                ))}
+                                                <tr>
+                                                    <td></td>  
+                                                    <td></td>  
+                                                </tr>
+                                                <tr>
+                                                    <td>Total amount</td>  
+                                                    <td>{totalAmount}</td>  
+                                                </tr>
+                                        </table>
+                                        
+                                </div>
+                                </Typography>
+                            
+                            </DialogContent>
+                            {/* <DialogActions>
+                                <Button autoFocus onClick={handleClose} color="primary">
+                                    Save changes
+                                </Button>
+                            </DialogActions> */}
+                        </Dialog>
+                    </div>
+                    <div className="clear"></div>
                 </div>
-                <div className="clear"></div>
                 <div className="selectOrder">
                     {/* <label>totalAmount= {totalAmount}</label> */}
                     <div className="selectOrderRow">
                         {selectItems && selectItems.map((item)=>(
-                        <div className="selectOrderItem1">
+                        <div className="selectOrderItem">
                             <div className="addToOrder">
                                 <button onClick={()=>{decreaseNumberOItems(item,item.count); }}>-</button>
                                 <label>{`   `}{item.count}{`   `}</label>

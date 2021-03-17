@@ -1,38 +1,29 @@
-.footer {
-    /* padding-top: 15px; */
-    /* margin: 0; */
-    bottom: 0;
-    font-family: Cursive !important;
-    background-color: white;
-    padding: 20px;
-    color: black;
-    height: 160px;
-    text-align: center;
+* {
+    box-sizing: border-box;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-areas: 'col1 col2 col3';
-    grid-gap: 10px;
-    margin: 30px 40px;
+.footer {
+    font-family: Cursive !important;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 30px 40px;
 }
 
 .col1 {
-    grid-area: col1;
+    float: left;
+    width: 30%;
 }
 
 .col2 {
-    grid-area: col2;
+    float: left;
+    width: 30%;
 }
 
 .col3 {
-    grid-area: col3;
+    float: left;
+    width: 30%;
 }
-
-
-/* .col4 {
-    grid-area: col4;
-} */
 
 a.social {
     margin: 0 1rem;
@@ -42,4 +33,55 @@ a.social {
 
 a.social:hover {
     transform: translateY(-2px);
+}
+
+.clear {
+    clear: both;
+}
+
+
+/* [class*="col-"] {
+    float: left;
+    padding: 15px;
+} */
+
+@media only screen and (max-width: 1024px) {
+    /* For tablets: */
+    .col-s-1 {
+        width: 8.33%;
+    }
+    .col-s-2 {
+        width: 16.66%;
+    }
+    .col-s-3 {
+        width: 25%;
+    }
+    .col-s-4 {
+        width: 33.33%;
+    }
+    .col-s-5 {
+        width: 41.66%;
+    }
+    .col-s-6 {
+        width: 50%;
+    }
+    .col-s-7 {
+        width: 58.33%;
+    }
+    .col-s-8 {
+        width: 66.66%;
+    }
+    .col-s-9 {
+        width: 75%;
+    }
+    .col-s-10 {
+        width: 83.33%;
+    }
+    .col-s-11 {
+        width: 91.66%;
+    }
+    .col-s-12 {
+        width: 100%;
+        font-size: 10px;
+    }
 }

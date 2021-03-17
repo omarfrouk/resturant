@@ -12,14 +12,13 @@ import './footer.css'
  
 function footer() {
     return (
-        <div className="footer"> 
-            <div className="grid-container">
-                <div className="col1">
+        <div className="footer">  
+                <div className="col-s-12 col1">
                     <h1>Location</h1>
                     <h5>123 Willow Street</h5>
                     <h5> Austin, TX 78702</h5>
                 </div> 
-                <div className="col2">
+                <div className="col-s-12 col2">
                     <h1>Contact</h1>
                     <h5>(512) 555-0110</h5>
                     <h5>template.placeholder@gmail.com</h5>
@@ -29,21 +28,13 @@ function footer() {
                     {/* <a href="/" className="facebook social"><FontAwesomeIcon icon={faFacebook} color="#4968ad" size="2x"/></a> */}
                     
                 </div>
-                <div className="col3">
+                <div className="col-s-12 col3">
                     <h1>hours</h1>
                     <h5>Tue – Thu, 8 am – 10 pm</h5>
                     <h5>Fri – Sun, 8 am – 11 pm</h5>
                     <h5>Closed Mondays</h5>
-                </div>
-                {/* <div className="col4">  
-                    <iframe src="./home"
-                    // src="https://www.google.com/maps?sll=30.267153,-97.743061&q=+Austin,+TX,+United+States&z=11" 
-                    width="90%" 
-                    height="99%" 
-                    title="Location"
-                    ></iframe> 
-                </div>  */}
-            </div> 
+                </div> 
+            <p className="clear"></p>
         </div>
     )
 }

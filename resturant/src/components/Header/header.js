@@ -3,13 +3,18 @@ import './header.css'
 function header(props) {
     return (
         <div  className="header">  
-                <a href="/home" className="navHunter">HUNTER</a>
-                <a className="navMenu"></a>
-                <a href="/menu" className="nav">Menu</a> 
-                <a href="/reservations" className="nav">Reservations</a>  
-                <a href="/orderNow" className="nav">Order Now</a> 
-                <a href="/story" className="nav">Story</a> 
-                <a href='/gallery' className="nav">Gallery </a> 
+            <div className="col-s-3 navHunter">
+                <a href="/home" >HUNTER</a>
+            </div>
+            <div className="col-s-9 nav">
+                {/* <a className="navMenu"></a> */}
+                <a href="/menu" >Menu</a> 
+                <a href="/reservations" >Reservations</a>  
+                <a href="/orderNow" >Order Now</a> 
+                <a href="/story" >Story</a> 
+                <a href="/gallery" >Gallery </a> 
+            </div>
+            <div className="clear"></div>
         </div>
     )
 }
