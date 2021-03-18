@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
-import Header from '../../components/Header/header'
+// import Header from '../../components/Header/header'
 import Menu from '../../components/Menu/menu'
-import Footer from '../../components/Footer/footer'
+// import Footer from '../../components/Footer/footer'
 
 class menu extends Component {
     render() {
         return (
             <div>
-                <Header/>
+                {/* <Header/> */}
                 <Menu/>
-                <Footer/>
+                {/* <Footer/> */}
             </div>
         )
     }

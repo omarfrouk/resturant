@@ -5,12 +5,14 @@ import Reservations from "./containers/Reservations/reservations";
 import Menu from "./containers/Menu/menu";
 import Story from "./containers/Story/story";
 import OrderNow from "./containers/OrderNow/orderNow";
-
+import Header from './components/Header/header'
+import Footer from './components/Footer/footer'
 import './App.css';
 
 function App() {
   return (
     <Router >
+      <Header />
       <Switch>
         <Route path="/home">
           <Home/> 
@@ -35,6 +37,7 @@ function App() {
         </Route>
 
       </Switch>
+      <Footer/>
     </Router>
   );
 }
