@@ -270,7 +270,7 @@ function OrderNow (){
                                     <div className="shoppingCartContent"> 
                                         <table>
                                             <tr>
-                                                <th>Image</th>
+                                                <th className="shoppingCartImages">Image</th>
                                                 <th>Meal</th>
                                                 <th>Quantity</th>
                                                 <th>Price</th>

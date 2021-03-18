@@ -145,7 +145,7 @@
 
 .shoppingCartContent th,
 .shoppingCartContent td {
-    padding: 10px 15px;
+    /* padding: 1% 1%; */
     text-align: center;
 }
 
@@ -191,6 +191,9 @@
     .shoppingCartContent {
         font-size: 12px;
         margin: 0;
+    }
+    .shoppingCartImages {
+        display: none;
     }
     .col-s-1 {
         width: 8.33%;
