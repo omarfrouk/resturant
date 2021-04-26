@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect  } from "react-router-dom";
 import Home from "./containers/Home/home";
 import Gallery from "./containers/Gallery/gallery";
 import Reservations from "./containers/Reservations/reservations";
@@ -31,11 +31,11 @@ function App() {
         </Route> 
         <Route path="/orderNow"> 
           <OrderNow/> 
-        </Route>
-        <Route path="/">
-          <Home/>  
-        </Route>
-
+        </Route> 
+        <Redirect from="/"
+                  to="/home"/>
+        <Redirect from="*"
+                  to="/home"/>
       </Switch>
       <Footer/>
     </Router>
