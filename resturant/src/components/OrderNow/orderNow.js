@@ -1,10 +1,10 @@
 import React from 'react'
-import item1 from './item1.jfif'
-import item2 from './item2.jfif'
-import item3 from './item3.jfif'
-import item4 from './item4.jfif'
-import item5 from './item5.jfif'
-import item6 from './item6.jfif'
+import item1 from './assets/item1.jfif'
+import item2 from './assets/item2.jfif'
+import item3 from './assets/item3.jfif'
+import item4 from './assets/item4.jfif'
+import item5 from './assets/item5.jfif'
+import item6 from './assets/item6.jfif'
 import {FaShoppingCart} from "react-icons/fa"
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';

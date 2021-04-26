@@ -7,7 +7,7 @@ import Story from "./containers/Story/story";
 import OrderNow from "./containers/OrderNow/orderNow";
 import Header from './components/Header/header'
 import Footer from './components/Footer/footer'
-import './App.css';
+import './App.scss';
 
 function App() {
   return (

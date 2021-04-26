@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import "./homeBack.css"
-import mainImage from './main.jpg'
-import img1 from './img1.jpg'
-import img2 from './img2.jpg'
-import img3 from './img3.jpg'
-import img4 from './img4.jpg'
-import img5 from './img5.jpg'
-import img6 from './img6.jpg'
-import img7 from './img7.jpg'
-import img8 from './img8.jpg'
+import mainImage from './assets/main.jpg'
+import img1 from './assets/img1.jpg'
+import img2 from './assets/img2.jpg'
+import img3 from './assets/img3.jpg'
+import img4 from './assets/img4.jpg'
+import img5 from './assets/img5.jpg'
+import img6 from './assets/img6.jpg'
+import img7 from './assets/img7.jpg'
+import img8 from './assets/img8.jpg'
 class homeBack extends Component {
     render() {
         return ( 

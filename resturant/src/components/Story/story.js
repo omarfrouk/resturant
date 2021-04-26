@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './story.css'
-import storyImg from './story.jfif'
+import storyImg from './assets/story.jfif'
 class story extends Component {
     render() {
         return (

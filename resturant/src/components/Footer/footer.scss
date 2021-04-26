@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+.footer {
+    padding: 30px 40px;
+    text-align: center;
+    font-size: 10px;
+    font-family: Cursive !important;
+    color: black;
+    background-color: white;
+
+    &__Item {
+        margin-bottom: 10px;
+        @media only screen and (min-width: 768px) {
+            float: left;
+            width: 30%;
+            margin-bottom: 0;
+            font-size: 15px;
+        }
+    }
+
+    .social {
+        margin: 0 1rem;
+        transition: transform 250ms;
+        display: inline-block;
+
+        > * {
+            width: 20px;
+            height: 20px;
+        }
+
+        @media only screen and (min-width: 768px) {
+            > * {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+    
+    .social:hover {
+        transform: translateY(-2px);
+    }
+    
+}
+
+.clear {
+    clear: both;
+}
