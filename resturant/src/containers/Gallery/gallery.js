@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import Header from "../../components/Header/header"
-import Footer from "../../components/Footer/footer"
+// import Header from "../../components/Header/header"
+// import Footer from "../../components/Footer/footer"
 import Gallery from "../../components/Gallery/gallery"
-import './gallery.css'
+
 class gallery extends Component {
     constructor(props) {
         super(props)
@@ -14,9 +14,9 @@ class gallery extends Component {
     render() {
         return (
             <div>
-             <Header/> 
+             {/* <Header/>  */}
              <Gallery/> 
-             <Footer/>
+             {/* <Footer/> */}
             </div>
         )
     }

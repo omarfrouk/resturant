@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    font-family: Cursive !important;
+    background-color: white;
+
+    &__NavHunter {
+        float: left;
+        width: 52%;
+        font-size: 30px;
+        text-decoration: none;
+        color: black;
+
+        @media only screen and (min-width: 768px) {
+            font-size: 35px;
+        }
+    }
+
+    &__MenuIcon {
+        display: flex;
+        margin: 10px;
+        margin-left: auto;
+
+        @media only screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__MenuBar {
+        display: none;
+
+        @media only screen and (min-width: 768px) {
+            display: block;
+            float: left;
+            width: 48%;
+            font-size: 15px;
+        }
+    }
+
+    &__MenuBar a {
+        float: left;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+        padding-left: 15px;
+        text-decoration: none;
+        color: black;
+
+        @media only screen and (min-width: 768px) {
+            width: auto;
+            padding-left: 15px;
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    .display {
+        display: block;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    & a:hover {
+        color: dimgray;
+    }
+}
